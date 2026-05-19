@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKURA RAMEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .body {
+        margin: 0%;
+    }
+
+    .hero {
+        background-image: url("./img1/hero_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+    }
+
+    .menu {
+        display: flex;
+        height: 112px;
+        padding: 20px 160px;
+        align-items: center;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif;
+    }
+
+    h1 {
+        font-size: 96px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    .logo {
+        width: 64px;
+        height: 64px;
+    }
+
+    .phone {
+        background-color: #9F0908;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        border: 3px solid rgb(255, 255, 255);
+        width: 200px;
+        height: 25px;
+    }
+
+    .phone:hover {
+        text-decoration: underline;
+    }
+
+    .hörer {
+        width: 24px;
+        height: 24px;
+    }
+
+    .buttons {
+        font-size: 24px;
+        margin-left: auto;
+        padding-right: 10px;
+        padding-top: 15px;
+    }
+
+    .buttons:hover {
+        color: bisque;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 96px;
+        padding-top: 200px;
+        font-weight: bold;
+        font-family: "Raleway", sans-serif;
+        color: white;
+    }
+
+    .undertitle {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .howtoorder {
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        color: #9F0908;
+        padding-bottom: 120px;
+    }
+
+    .ordertitle {
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 120px;
+    }
+
+    .bestellungen {
+        font-family: "Economica", sans-serif;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 64px;
+    }
+
+    .bestellen {
+        font-family: "Economica", sans-serif;
+        font-size: 56px;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ing {
+        width: 128px;
+        height: 128px;
+    }
+
+    .pick {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 16px;
+    }
+
+    .ourmenu {
+        background-image: url(./img1/section_our_menu_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .omTitle {
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 80px;
+        color: #9F0908;
+        padding-top: 120px;
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bowls {
+        width: 352px;
+        height: 352px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .menu2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding-left: 90px;
+        padding-top: 64px;
+    }
+
+    .menuMitte {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        padding-top: 56px;
+        padding-right: 90px;
+    }
+
+    .menuLast {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 56px;
+        padding-left: 90px;
+        padding-bottom: 120px;
+
+    }
+
+    .gericht {
+        font-size: 56px;
+        font-family: "Economica", sans-serif;
+        font-weight: bold;
+        color: black;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .zutaten {
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: #675E54;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menuTabelle {
+        width: 400px;
+    }
+
+    .Ltitle {
+        color: #9F0908;
+        font-size: 80px;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        padding-top: 120px;
+    }
+
+    .street {
+        font-size: 24px;
+        font-family: "Raleway", sans-serif;
+        font-weight: normal;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .at {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8px;
+    }
+
+    .map {
+        padding-top: 64px;
+    }
+
+    .Footer {
+        background-color: #0A141E;
+        height: 144px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .lastlogo {
+        height: 44px;
+    }
+
+    .second-LastLogo {
+        display: none;
+    }
+
+    .linksk {
+        height: 40px;
+        width: 40px;
+        padding: 8px;
+    }
+
+    .GMAP {
+        width: 100%;
+        height: 950px;
+    }
+
+    @media(max-width: 1280px) {
+        .buttons {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 24px;
+        }
+
+        .phone {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 72px;
+        }
+
+        .undertitle {
+            font-size: 20px;
+        }
+
+        .hero {
+            background-position: center;
+        }
+
+        .ordertitle {
+            padding-top: 96px;
+            padding-bottom: 48px;
+            font-size: 64px;
+        }
+
+        .ing {
+            width: 112px;
+            height: 112px;
+        }
+
+        .pick {
+            font-size: 32px;
+        }
+
+        .howtoorder {
+            padding: 72px 16px;
+        }
+
+        .pick {
+            padding-top: 8px;
+        }
+
+        .ordertitle {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .omTitle {
+            padding-top: 96px;
+        }
+
+        .ourmenu {
+            padding-bottom: 96px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .bowls {
+            width: 343px;
+            height: 343px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .bowl-middle {
+            padding-left: 24px;
+        }
+
+        .other-bowls {
+            padding-right: 24px;
+        }
+
+        .menu-padding {
+            padding-bottom: 32px;
+            padding-top: 0;
+        }
+
+        .menu2 {
+            padding-left: 0;
+        }
+
+        .menuMitte {
+            padding-right: 0;
+        }
+
+        .menuLast {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+        }
+
+        .zutaten {
+            font-size: 24px;
+        }
+
+        .menuTabelle {
+            width: 300px;
+        }
+
+        .gericht {
+            font-size: 32px;
+            padding-bottom: 16px;
+        }
+
+        .Ltitle {
+            padding-top: 96px;
+            height: fit-content;
+        }
+
+        h2 {
+            font-size: 64px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .street {
+            font-size: 20px;
+            padding-top: 0;
+        }
+
+        .map {
+            padding-top: 48px;
+        }
+
+        .Footer {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
+    @media(max-width: 767px) {
+
+        .menu {
+            padding: 16px 16px;
+        }
+
+        .phone {
+            font-size: 16px;
+            width: 150px;
+            height: 10px;
+        }
+
+        .hörer {
+            width: 16px;
+            height: 16px;
+        }
+
+        h1 {
+            font-size: 44px;
+            text-align: center;
+        }
+
+        .undertitle {
+            font-size: 16px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .howtoorder {
+            padding: 72px 16px;
+        }
+
+        .ordertitle {
+            padding-top: unset;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .bestellungen {
+            padding-top: 0;
+            flex-direction: column;
+        }
+
+        .bestellen {
+            padding-top: 32px;
+        }
+
+        .omTitle {
+            font-size: 40px;
+            padding-top: unset;
+        }
+
+        .menus {
+            padding-top: 40px;
+        }
+
+        .ourmenu {
+            padding: 72px 16px;
+        }
+
+        .bowls {
+            width: 290px;
+            height: unset;
+        }
+
+        .gericht {
+            font-size: 32px;
+        }
+
+        .zutaten {
+            font-size: 24px;
+        }
+
+        .menu-flex {
+            flex-direction: column;
+        }
+
+        .menuMitte {
+            flex-direction: column-reverse;
+        }
+
+        .menu-padding {
+            padding-bottom: 32px;
+        }
+
+        .menuTabelle {
+            padding-top: 16px;
+        }
+
+        .bowls {
+            padding: 0;
+        }
+
+        .menuTabelle {
+            width: 257px;
+        }
+
+        .Ltitle {
+            padding-top: 72px;
+            height: fit-content;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .street {
+            font-size: 16px;
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .map {
+            padding-top: 40px;
+        }
+
+        .lastlogo {
+            display: none;
+        }
+
+        .second-LastLogo {
+            display: flex;
+            width: 40px;
+            height: 40px;
+        }
+
+        .Footer {
+            height: 86px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .linksk {
+            width: 32px;
+            height: 32px;
+        }
+
+    }
+</style>
+
+<body class="body">
+    <section class="hero">
+        <div class="menu">
+            <div class="logo">
+                <img class="logo" src="./img2/sakura_logo.png">
+            </div>
+            <div class="buttons">
+                <a class="buttons" href="#MENU">MENU</a>
+                <a class="buttons" href="#LOCATIONS">LOCATIONS</a>
+                <a class="buttons" href="#ABOUT">ABOUT</a>
+            </div>
+            <a class="phone" href="tel:0176 54564534"><img class="hörer" src="./img2/phone.png">0176 54564534</a>
+        </div>
+        <div class="title">
+            <h1>SAKURA RAMEN</h1>
+            <span class="undertitle">THE BEST RAMEN IN TOWN</span>
+        </div>
+    </section>
+
+    <section class="howtoorder">
+        <h2 class="ordertitle">
+            HOW TO ORDER
+        </h2>
+        <div class="bestellungen">
+            <div class="bestellen">
+                <img class="ing" src="./img2/noodle.png">
+                <div class="pick">
+                    <span>Pick your</span>
+                    <span>noodle</span>
+                </div>
+
+            </div>
+            <div class="bestellen">
+                <img class="ing" src="img2/broth.png">
+                <div class="pick">
+                    <span>Pick your</span>
+                    <span>broth</span>
+                </div>
+            </div>
+            <div class="bestellen">
+                <img class="ing" src="./img2/egg.png">
+                <div class="pick">
+                    <span>Add your</span>
+                    <span>toppings</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourmenu" id="MENU">
+        <h2 class="omTitle">OUR MENU</h2>
+        <article class="menus">
+            <div class="menu2 menu-flex menu-padding">
+                <img class="bowls other-bowls" src="./img2/R1.png">
+                <div class="menutabellen">
+                    <table class="menuTabelle">
+                        <th class="gericht" colspan="2"> Tonkatsu Ramen</th>
+                        <tr class="zutaten">
+                            <td>CHICKEN</td>
+                            <td>11.95€</td>
+                        </tr>
+                        <tr class="zutaten">
+                            <td>BEEF</td>
+                            <td>12.95€</td>
+                        </tr>
+                        <tr class="zutaten">
+                            <td>SHRIMP</td>
+                            <td>13.95€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="menuMitte menu-padding">
+                <div class="menutabellen">
+                    <table class="menuTabelle">
+                        <th class="gericht" colspan="2">Spicy Miso Ramen</th>
+                        <tr class="zutaten">
+                            <td>CHICKEN</td>
+                            <td>11.95€</td>
+                        </tr>
+                        <tr class="zutaten">
+                            <td>BEEF</td>
+                            <td>12.95€</td>
+                        </tr>
+                        <tr class="zutaten">
+                            <td>SHRIMP</td>
+                            <td>13.95€</td>
+                        </tr>
+                    </table>
+                </div>
+                <img class="bowls bowl-middle" src="./img2/R2.png" alt="">
+            </div>
+            <div class="menuLast menu-flex">
+                <img class="bowls other-bowls" src="./img2/R3.png" alt="">
+                <div class="menutabellen">
+                    <table class="menuTabelle">
+                        <th class="gericht" colspan="2">Shio Ramen</th>
+                        <tr class="zutaten">
+                            <td>CHICKEN</td>
+                            <td>11.95€</td>
+                        </tr>
+                        <tr class="zutaten">
+                            <td>BEEF</td>
+                            <td>12.95€</td>
+                        </tr>
+                        <tr class="zutaten">
+                            <td>SHRIMP</td>
+                            <td>13.95€</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <nav class="nav" id="LOCATIONS">
+        <div class="Ltitle">
+            <h2>FIND US AT</h2>
+        </div>
+        <div class="at"><img class="icon" src="./img2/map_marker.png"><span class="street">Kapuzinerstraße 31, München,
+                80337</span></div>
+        <div class="map">
+            <iframe class="GMAP"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.210995698633!2d11.558694776814724!3d48.12545425200455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44cf7e4d5f%3A0x55a7bd29a73e9161!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1770648170980!5m2!1sde!2sde"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </nav>
+
+    <footer class="Footer" id="ABOUT">
+        <img class="second-LastLogo" src="./img2/sakura_logo.png">
+        <img src="img2/sakura_ramen_logo_and_text.png" class="lastlogo">
+        <div class="socialmedia">
+            <a href="https://www.tripadvisor.de/" target="_blank" rel="noopener noreferrer"><img class="linksk"
+                    src="img2/tripadvisor_logo.png"></a>
+            <a href="https://www.facebook.com/?locale=de_DE/" target="_blank" rel="noopener noreferrer"><img
+                    class="linksk" src="img2/facebook_logo.png"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="linksk"
+                    src="img2/instagrram_logo.png"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
